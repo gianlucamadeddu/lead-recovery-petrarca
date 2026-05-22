@@ -531,12 +531,12 @@
             <label style="display:block;margin-bottom:6px;font-weight:700;font-size:0.87em;">Commerciale:</label>
             <select id="commercial-select" style="width:100%;padding:10px;border:2px solid #ddd;border-radius:8px;font-size:14px;font-family:inherit;">
                 <option value="">Seleziona commerciale</option>
-                <option value="Alessandra Deidda">Alessandra Deidda</option>
-                <option value="Alessandro Poma">Alessandro Poma</option>
-                <option value="Pamela Palmas">Pamela Palmas</option>
-                <option value="Congiu Barbara">Congiu Barbara</option>
-                <option value="Stefano Serra">Stefano Serra</option>
-                <option value="Valerio Pesapane">Valerio Pesapane</option>
+                <option value="Commerciale 1">Commerciale 1</option>
+                
+                
+                
+                
+                <option value="Commerciale 2">Commerciale 2</option>
             </select>
         </div>
         <div style="display:flex;gap:10px;">
@@ -629,13 +629,13 @@
     //   → Impostazioni progetto → Le tue app → aggiungi app Web
     // ================================================================
     const firebaseConfig = {
-    apiKey:            "AIzaSyBc7lpcaQ8QoZA8K5Zywoq4eEFYOCt_KvQ",
-    authDomain:        "lead-recovery-system-petrarca.firebaseapp.com",
-    projectId:         "lead-recovery-system-petrarca",
-    storageBucket:     "lead-recovery-system-petrarca.firebasestorage.app",
-    messagingSenderId: "709971355674",
-    appId:             "1:709971355674:web:eca177192dc78b719589a3"
-};
+        apiKey:            "YOUR_API_KEY",
+        authDomain:        "YOUR_PROJECT_ID.firebaseapp.com",
+        projectId:         "YOUR_PROJECT_ID",
+        storageBucket:     "YOUR_PROJECT_ID.firebasestorage.app",
+        messagingSenderId: "YOUR_SENDER_ID",
+        appId:             "YOUR_APP_ID"
+    };
 
     const app = initializeApp(firebaseConfig);
     const db  = getFirestore(app);
@@ -680,7 +680,7 @@
         'lead-ok':         { label: `${ic('check')} Lead Ok`,           text: 'Lead Ok',         color: '#27ae60' }
     };
 
-    const commerciali = ["Alessandra Deidda","Alessandro Poma","Pamela Palmas","Congiu Barbara","Stefano Serra","Valerio Pesapane"];
+    const commerciali = ["Commerciale 1","Commerciale 2"];
 
     // ——— Init ———
     async function initApp() {
